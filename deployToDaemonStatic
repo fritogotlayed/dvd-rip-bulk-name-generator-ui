@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+
+npm run build
+yes | rm -rf ../dvd-rip-bulk-name-generator/src/static/*;
+cp -rf ./build/* ../dvd-rip-bulk-name-generator/src/static;
+echo 'Deploy Complete'
